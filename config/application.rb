@@ -31,5 +31,7 @@ module RedeemsApi
     config.active_storage.draw_routes = false
     config.action_mailbox.draw_routes = false
     config.middleware.delete ActionDispatch::Routing::RouteSet
+
+    config.active_record.schema_format = :sql
   end
 end
